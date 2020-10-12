@@ -4,7 +4,7 @@ import com.mnt_lab.*
 def testRunner = new tests()
 node("build-on-ec2") {
 	stage("Run tests") {
-		git branch:'rdymov',  url: 'git@git.epam.com:Vitali_Ulantsau/groovy-tasks.git'
+		git branch:scm.branches[0].name,  url: 'https://github.com/MNT-Lab/Groovy-tasks.git'
 	}
 	testRunner.exec()
 }
