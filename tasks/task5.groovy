@@ -1,6 +1,5 @@
-def isIp(String string)  {        
-         string = string.trim()
-         String[] parts = string.split("\\.");
+def isIp(string)  {        
+          String[] parts = string.split("\\.");
          if (parts.length != 4) return false;
          for (int i = 0; i < 4; ++i)
          {
@@ -9,4 +8,4 @@ def isIp(String string)  {
          }
          return true;
      }
-return this   
+return this
