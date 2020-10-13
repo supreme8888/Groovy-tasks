@@ -11,7 +11,7 @@ def encryptThis(str) {
         	it[-1] = tmp
         	it_j = it.join()
         	result.add(it_j)
-	        }
+        }
 
 	result = result.join(' ')
         return result
