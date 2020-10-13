@@ -1,6 +1,3 @@
-"""
-comment
-"""
   def mulEvenOdd(my_list){
       	
       for(int i in my_list) {
