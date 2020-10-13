@@ -3,3 +3,4 @@ def sum(int a, int b) {
 }
 
 return this
+sum(2,5)
