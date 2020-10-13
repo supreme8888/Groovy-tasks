@@ -12,5 +12,5 @@ def isIp(String str)
         return false;
     }
 }
-}
+
 return this
