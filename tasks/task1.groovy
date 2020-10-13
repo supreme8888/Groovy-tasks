@@ -3,4 +3,4 @@ def sum(int a, int b) {
 }
 
 return this
-print(sum(10+15))
+println(sum(10+15))
