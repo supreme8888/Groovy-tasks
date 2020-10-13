@@ -1,4 +1,10 @@
 def adults(map){
-    map.grep{it.value >= 18}
+    def newmap = [:]
+    for ( e in map ){
+        if ( e.value >= 18 ){
+            newmap << e
+        }
+    }
+    return newmap
 }
 return this
