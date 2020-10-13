@@ -1,7 +1,5 @@
 def adults(ppl) {
-	ppl.removeAll{ it ->
-		it.value < 18
-	}
+	ppl.findAll{ it.value < 18 }
 	return ppl 
 }
 
