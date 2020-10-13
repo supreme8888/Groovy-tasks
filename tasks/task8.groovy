@@ -12,7 +12,7 @@ def parseAndFilterJson(string) {
             newMap.put(entry.key, entry.value)
         }
     }
-    def json = JsonOutput.toJson(newMap)
+    def json = JsonOutput.toJson(newMap).toString()
 }
 
 println(parseAndFilterJson("{\"Kate\":18,\"Alan\":16,\"Osvald\":27}"))
