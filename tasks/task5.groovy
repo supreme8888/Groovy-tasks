@@ -1,4 +1,4 @@
-public static boolean isIP(String str)
+def isIp(String str)
 {
     try
     {
