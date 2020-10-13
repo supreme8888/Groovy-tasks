@@ -3,7 +3,7 @@ def encryptThis(str) {
 
 	listOfWords = (List)str.split()
 
-	listOfChar = listOfWords.each {
+	listOfWords.each {
         	it = (List)it.split('')
         	it[0] = (int)it[0]
         	tmp = it[1]
@@ -13,7 +13,7 @@ def encryptThis(str) {
         	result.add(it_j)
 	        }
 
-	String result = result.join(' ').trim()
+	result = result.join(' ')
         return result
 }
 
