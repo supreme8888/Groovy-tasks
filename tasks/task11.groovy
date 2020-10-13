@@ -5,7 +5,7 @@ def gstring(string, int n) {
       res[i] = "${n}(${string})"
     }
   }
-  return res
+  return res.join(" ")
 }
 
 return this
