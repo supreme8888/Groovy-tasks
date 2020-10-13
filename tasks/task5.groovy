@@ -1,4 +1,4 @@
-def isIp(String str)
+def isIp(str)
 {
          String[] parts = str.split("\\.");
          if (parts.length != 4) return false;
@@ -8,9 +8,5 @@ def isIp(String str)
              if (p > 255 || p < 0) return false;
          }
          return true;
-      {
-        return false;
-    }
-}
-
-return this
+     }
+return this   
