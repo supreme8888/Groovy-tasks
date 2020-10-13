@@ -2,8 +2,8 @@ import groovy.json.*
 
 def parseAndFilterJson(string) {
     newMap = [:]
-    def jsonSlurper = new JsonSlurper()
-    def object = jsonSlurper.parseText(string)
+    jsonSlurper = new JsonSlurper()
+    object = jsonSlurper.parseText(string)
     for (entry in object) {
         String str = String.valueOf(entry.value)
         int a = Integer.parseInt(str[0])
@@ -12,7 +12,8 @@ def parseAndFilterJson(string) {
             newMap.put(entry.key, entry.value)
         }
     }
-    def json = JsonOutput.toJson(newMap)
+    json = JsonOutput.toJson(newMap)
+    return json.toString()
 }
 
 return this
