@@ -1,10 +1,17 @@
-def int isIp(string) {
-
-   if(org.codehaus.groovy.grails.validation.routines.InetAddressValidator.getInstance().isValidInet4Address(delegate)){
-    return true;
-   } else {
-    return false;
-    } 
+public static boolean isIP(String str)
+{
+    try
+    {
+         String[] parts = str.split("\\.");
+         if (parts.length != 4) return false;
+         for (int i = 0; i < 4; ++i)
+         {
+             int p = Integer.parseInt(parts[i]);
+             if (p > 255 || p < 0) return false;
+         }
+         return true;
+    } catch (Exception e)
+    {
+        return false;
+    }
 }
-
-return this
