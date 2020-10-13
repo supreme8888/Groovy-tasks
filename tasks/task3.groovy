@@ -1,4 +1,4 @@
-def isSublist(def firstList, def secondList) {
+def isSublist(firstList, secondList) {
     firstList.containsAll(secondList)
 }
 
