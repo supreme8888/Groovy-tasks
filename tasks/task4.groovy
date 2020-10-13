@@ -7,7 +7,7 @@ def fib = {
       }
      return n1 
 }
-println (fib(10))
+// println (fib(10))
 
 return this
 
