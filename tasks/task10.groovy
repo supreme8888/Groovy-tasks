@@ -1,5 +1,9 @@
+// def urlText(string) {
+//   return string.toURL().text
+// }
 def urlText(string) {
-  return string.toURL().text
+  string = "curl " + string
+  string.execute().text.trim()
 }
 
 return this
