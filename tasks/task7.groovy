@@ -9,8 +9,8 @@ def encryptThis(str) {
         	tmp = it[1]
         	it[1] = it[-1]
         	it[-1] = tmp
-        	it = it.join()
-        	result.add(it)
+        	it_j = it.join()
+        	result.add(it_j)
 	        }
 
 	result = result.join(' ')
