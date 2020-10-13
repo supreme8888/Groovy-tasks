@@ -12,7 +12,7 @@ def parseAndFilterJson(string) {
             newMap.put(entry.key, entry.value)
         }
     }
-    def json = JsonOutput.toJson(newMap).toString()
+    def json = new groovy.json.JsonBuilder(newMap).toString()
 }
 
 return this
