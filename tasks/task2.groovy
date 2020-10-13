@@ -5,7 +5,7 @@
          my_res = i % 2 == 0 ? i* 2 : i * 3
          res_list << my_res
       }
-	return(res_list)	
+	return this	
    }
 
 return this
