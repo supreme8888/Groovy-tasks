@@ -1,4 +1,4 @@
-def main(def someList) {
+def mulEvenOdd(def someList) {
     newList = []
     for (int i in someList) {
         result = i % 2 == 0 ? i * 2 : i * 3
