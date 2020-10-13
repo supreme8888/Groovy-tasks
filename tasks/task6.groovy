@@ -1,4 +1,4 @@
-def adults(map){
+def adults(def map){
     def newmap = [:]
     for ( e in map ){
         if ( e.value >= 18 ){
