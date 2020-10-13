@@ -13,7 +13,8 @@ def encryptThis(str) {
         	result.add(it_j)
 	        }
 
-	result = result.join(' ')
+	String result = result.join(' ').trim()
+        return result
 }
 
 println(encryptThis("Hello world"))
