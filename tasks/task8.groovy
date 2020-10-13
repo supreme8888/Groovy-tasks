@@ -2,7 +2,7 @@ import groovy.json.*
 
 def parseAndFilterJson(string) {
     newMap = [:]
-    jsonSlurper = new JsonSlurper()
+    def jsonSlurper = new JsonSlurper()
     object = jsonSlurper.parseText(string)
     for (entry in object) {
         String str = String.valueOf(entry.value)
