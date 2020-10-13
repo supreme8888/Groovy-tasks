@@ -1,5 +1,5 @@
 def sum(int a, int b) {
-  return 42
+  return a + b
 }
-
+println (sum(4, 6))
 return this
