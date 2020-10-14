@@ -12,6 +12,6 @@ def parseAndFilterJson(str) {
 	return jsonObject
 }
 
-println(parseAndFilterJson("{\"Kate\":18,\"Alan\":16,\"Osvald\":27}"))
+#println(parseAndFilterJson("{\"Kate\":18,\"Alan\":16,\"Osvald\":27}"))
 
 return this
