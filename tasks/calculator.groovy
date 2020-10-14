@@ -22,8 +22,6 @@ def exec(str) {
    
   str = (List)str.split("")
 
-  println str
-
   for (i = 0; i < str.size(); i++) {
     switch(str[i]) {
       case '*':
@@ -45,8 +43,7 @@ def exec(str) {
     }
   }
     
-  str.removeAll('del')
-  println str
+  str.findAll{ it != 'del' }
   
   for (i = 0; i < str.size(); i++) {
     switch(str[i]) {
@@ -70,9 +67,9 @@ def exec(str) {
   }
     
   str.removeAll('del')
-  println str.join()
+  return str.join()
 }
 
-exec("6*(3+1)")
+println(exec("6*(3+1)"))
 
 return this
