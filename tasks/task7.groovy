@@ -1,6 +1,7 @@
 def encryptThis(variable) {
-  	String result = ""
   	str = variable.split(' ')
+    def String[] result= new String[str.length]
+ 
     str.eachWithIndex { itstr, indexstr ->
         word = itstr.split("")
         length = word.length
@@ -14,10 +15,9 @@ def encryptThis(variable) {
               word[1] = lastchar
             }
         }
-      result += word.join("") + " "
+      result[indexstr]= word.join("")
     }
-  return result;
-  
+  return result.join(" ")
 }
 
 return this
