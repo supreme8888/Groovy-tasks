@@ -1,5 +1,6 @@
 def exec(str) {
-	 return str.execute().text.trim()
+	 result = str.execute().text.toString()
+	 return result.trim()
 }
 
 println(exec("date"))
