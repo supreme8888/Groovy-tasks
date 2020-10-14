@@ -1,3 +1,3 @@
-int sum(int argA, int argB) {
+def sum(int argA, int argB) {
     return argA+argB
 }
