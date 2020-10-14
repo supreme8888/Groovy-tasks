@@ -43,7 +43,7 @@ def exec(str) {
     }
   }
     
-  str.findAll{ it != 'del' }
+  str -= ['del']
   
   for (i = 0; i < str.size(); i++) {
     switch(str[i]) {
@@ -66,10 +66,10 @@ def exec(str) {
     }
   }
     
-  str.findAll{ it != 'del' }
-  return str.join()
+  str -= ['del'] 
+  String result = str.inject{}
 }
 
-println(exec("6*(3+1)"))
+println(exec("1+9/3"))
 
 return this
