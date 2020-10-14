@@ -8,7 +8,7 @@ def parseAndFilterJson(str) {
 	object = object.findAll{ it.value % 9 == 0 }
 	jsonObject = JsonOutput.toJson(object)
 	
-return jsonObject
+	return jsonObject
 
 }
 
