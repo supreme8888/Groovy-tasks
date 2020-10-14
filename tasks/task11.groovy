@@ -1,12 +1,10 @@
-def gstring(s, int n)
+def gstring(s, n)
 {
  def_s="1() 2() 3()"
- StringBuffer sb = new StringBuffer(def_s);
+ new_st=def_s.split(" ")
 
- poin=def_s.indexOf("$n")
- new_st=sb.insert(poin+2,"$s")
-
- return(new_st.toString().trim())
+  new_st[n-1]="$n($s)".toString()
+  return new_st.join(" ").trim()
 
 }
 return this
