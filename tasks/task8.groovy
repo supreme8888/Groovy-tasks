@@ -6,9 +6,9 @@ def parseAndFilterJson(str) {
 	def jsonSlurper = new JsonSlurper()
 	def object = jsonSlurper.parseText str
 	object = object.findAll{ it.value % 9 == 0 }
-	jsonObj = JsonOutput.toJson(object)
+	jsonObject = JsonOutput.toJson(object)
 	
-return jsonObj
+return jsonObject
 
 }
 
