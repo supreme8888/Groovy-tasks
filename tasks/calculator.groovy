@@ -42,7 +42,7 @@ def exec(str) {
         break
     }
   }
-    
+   
   str -= ['del']
   
   for (i = 0; i < str.size(); i++) {
@@ -67,9 +67,8 @@ def exec(str) {
   }
     
   str -= ['del'] 
-  String result = str.inject { val ->
-    "$val"
-  }
+  result = str[0]
+  return result
 }
 
 println(exec("1+9/3"))
