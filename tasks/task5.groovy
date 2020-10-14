@@ -1,7 +1,5 @@
-import org.codehaus.groovy.grails.validation.routines.InetAddressValidator
-
 def boolean isIp(variable) {
-    return(InetAddressValidator.getInstance().isValidInet4Address(variable))
+    return(variable.matches("\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}"))
 }
 
 return this
