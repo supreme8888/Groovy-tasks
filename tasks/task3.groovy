@@ -1,5 +1,5 @@
 def isSublist(a,b)
 {
-  a.contains(b)
+  a.containsAll(b)
 }
 return this
