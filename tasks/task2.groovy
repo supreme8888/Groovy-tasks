@@ -7,3 +7,4 @@ def mulEvenOdd(list){
     }
   return list1
 }
+return this

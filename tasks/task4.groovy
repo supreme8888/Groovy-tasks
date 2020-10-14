@@ -9,3 +9,4 @@ def fib(k){
 }
  return posl[k] 
 }
+return this
