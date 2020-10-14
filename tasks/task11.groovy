@@ -5,8 +5,8 @@ def gstring(s, int n)
 
  poin=def_s.indexOf("$n")
  new_st=sb.insert(poin+2,"$s")
- t="$new_st"
- print(t.trim())
+
+ return(new_st=sb.toString().trim())
 
 }
 return this
