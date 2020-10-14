@@ -4,5 +4,4 @@ def isIp(ip) {
 }
 
 println(isIp('10.2.3.123'))
-
 return this
