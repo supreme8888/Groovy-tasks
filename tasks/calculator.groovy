@@ -16,8 +16,8 @@ def exec(str) {
   brac_txt = brac
 
   if(brac) {
-  brac = brac.split("")[1..-2]
-  str = str.replace(brac_txt, (String)intermediateValue(brac))
+    brac = brac.split("")[1..-2]
+    str = str.replace(brac_txt, (String)intermediateValue(brac))
   }
    
   str = (List)str.split("")
@@ -67,7 +67,9 @@ def exec(str) {
   }
     
   str -= ['del'] 
-
+  String result = str.inject { val ->
+    "$val"
+  }
 }
 
 println(exec("1+9/3"))
