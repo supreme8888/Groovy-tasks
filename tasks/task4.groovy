@@ -1,5 +1,7 @@
-boolean isIp(String s){
-(s =~ /^((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\.){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]?)$/) ? true : false 
+int fib(int n){
+  if (n == 0 || n == 1)
+    return n
+return fib(n - 2) + fib(n - 1)
 }
 
 return this
