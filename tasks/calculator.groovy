@@ -67,7 +67,7 @@ def exec(str) {
   }
     
   str -= ['del'] 
-  String result = str.inject{}
+
 }
 
 println(exec("1+9/3"))
