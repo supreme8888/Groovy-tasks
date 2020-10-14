@@ -1,18 +1,15 @@
 def encryptThis(str) {
-        result = []
-
+        result = ''
         listOfWords = str.split()
         listOfWords.collect {
-                it = (List)it.split("")
-                it[0] = (int)it[0]
-                tmp = it[1]
-                it[1] = it[-1]
-                it[-1] = tmp
-                result.add(it.join())
+                first = (int)it[0]
+                last = it[1]
+                second = it[-1]
+                others = it[2..-2]
+                result += first + second + others + last + ' '
         }
 
-        result = result.join(" ")
-        return result
+        return result.trim()
 }
 
 println(encryptThis("Hello world"))
