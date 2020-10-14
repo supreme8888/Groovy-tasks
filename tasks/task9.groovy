@@ -1,5 +1,5 @@
-def exec(str){
-   return(str.execute().text.trim())
+def exec(string){
+    string.execute().text.trim()
 }
 
 return this
