@@ -1,11 +1,6 @@
 def isIp(ip) {
-	ip = ip.split('\\.', -1)
-	ip = ip.toList()
-	if(ip.size() == 4)
-		return true
-	else
-		return false
-
+	reg = /((\d{0,3}).(\d{0,3}).(\d{0,3}).(\d{0,3}))/
+	return ip ==~ reg
 }
 
 println(isIp('10.2.3.123'))
