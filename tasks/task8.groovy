@@ -2,8 +2,8 @@ import groovy.json.JsonSlurper
 
 def parseAndFilterJson(string) {
   def jsonSlurper = new JsonSlurper().parseText(string)
-  def JsonBuilder = new groovy.json.JsonBuilder(string) 
-  parseJson = JsonBuilder(jsonSlurper.findAll{ it.value % 9 == 0 })
+  jsonSlurper = jsonSlurper.findAll{ it.value % 9 == 0 }
+  def parseJson = new groovy.json.JsonBuilder(jsonSlurper)
   return parseJson.toString()
 }
 
