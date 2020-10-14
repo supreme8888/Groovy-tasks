@@ -1,5 +1,5 @@
 def sum(int a, int b) {
-  a += b
+  a + b
 }
 
 return this
