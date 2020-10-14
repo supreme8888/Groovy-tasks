@@ -1,5 +1,3 @@
-def sum(int a, int b) {
-  return 42
+int sum(int argA, int argB) {
+    return argA+argB
 }
-
-return this
