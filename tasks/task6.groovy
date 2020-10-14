@@ -1,4 +1,4 @@
 def adults(map) {
-  map.findAll{ it.value >= 18}
+    map.grep{it.value >= 18}
 }
 return this
