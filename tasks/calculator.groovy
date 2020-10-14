@@ -66,7 +66,7 @@ def exec(str) {
     }
   }
     
-  str.removeAll('del')
+  str.findAll{ it != 'del' }
   return str.join()
 }
 
