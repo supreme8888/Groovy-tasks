@@ -1,6 +1,9 @@
 def adults(Map map){
-map.retainAll{it -> it.value >= 18}
-return map
+def result = [:]
+  for (i in map)
+    if (i.value >= 18)
+      result.put(i.key, i.value)
+return result
 }
 
 return this
