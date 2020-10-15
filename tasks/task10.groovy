@@ -1,9 +1,6 @@
-String gstring(String s, int n){
-  def result = "1() 2() 3()"
-  def list = result.split(" ")
-  list[n-1] = "$n($s)".toString()
-return list.join(" ").trim()
-
+String urlText(String s){
+def html = new URL(s).getText()
+return html
 }
 
 return this
