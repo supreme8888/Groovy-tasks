@@ -1,13 +1,12 @@
 def mulEvenOdd(List list){
-  def result = []
-  for (i in list)
+  for (int i=0; i < list.size(); i++)
   {
-    if (i%2 == 0)
-       result << i*2;
-    if (i%2 == 1)
-       result << i*3;
+    if (list[i]%2 == 0)
+      list[i] = list[i]*2;
+    if (list[i]%2 == 1)
+      list[i] = list[i]*3;
     }
-   return result
-
+return list
 }
+
 return this
